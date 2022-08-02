@@ -7,14 +7,15 @@ function App(props) {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     let button;
-    if (this.state.isLoggedIn){
-        button = <LogoutButton onClick={this.setIsLoggedIn(false)}/>
+    if (isLoggedIn){
+        button = <LogoutButton onClick={setIsLoggedIn(false)}/>
     } else {
-        button = <LoginButton onClick={this.setIsLoggedIn(true)}/>
+        button = <LoginButton onClick={setIsLoggedIn(true)}/>
     }
     return (
         <div>
-            <Greeting isLoggedIn={this.state.isLoggedIn}/>
+            <Greeting isLoggedIn={isLoggedIn}/>
+            {button}
         </div>
     );
 }

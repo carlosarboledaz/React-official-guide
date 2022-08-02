@@ -1,5 +1,5 @@
-import UserGreeting from './components/UserGreeting';
-import GuestGreeting from './components/GuestGreeting';
+import UserGreeting from './UserGreeting';
+import GuestGreeting from './GuestGreeting';
 
 function Greeting(props){
     const isLoggedIn = props.isLoggedIn;
